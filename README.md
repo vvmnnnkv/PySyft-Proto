@@ -1,2 +1,3 @@
 # PySyft-Proto
-PySyft protocol constants
+
+`proto.json` contains constants for encoding PySyft data types.  
