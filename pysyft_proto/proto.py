@@ -1,12 +1,10 @@
-from os import path
+from pkg_resources import resource_string
 import json
 
-filename = path.dirname(path.dirname(__file__)) + path.sep +  "proto.json"
 proto_info = None
 
 try:
-    with open(filename) as f:
-        proto_info = json.load(f)
+    proto_json = resource_string(__name__, 'proto.json')
+    proto_info = json.loads(proto_json)
 except Exception:
     pass
-
