@@ -1,8 +1,8 @@
 from os import path
 import json
 
-filename = path.dirname(path.dirname(__file__)) + "/proto.json"
-proto_info = {}
+filename = path.dirname(path.dirname(__file__)) + path.sep +  "proto.json"
+proto_info = None
 
 try:
     with open(filename) as f:

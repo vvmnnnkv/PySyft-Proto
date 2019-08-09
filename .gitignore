@@ -1,1 +1,4 @@
 .idea
+build
+*.egg-info
+pysyft_proto/__pycache__
